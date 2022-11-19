@@ -102,18 +102,21 @@ Para isso, você poderá utilizar o modelo abaixo:
     print("     \_         _/         ")
     print("       \_______/           ")
 ```
+- O programa também deverá ser capaz de informar quantas tentativas foram utilizadas pelo(a) jogador(a) antes que ele(a) vencesse ou fosse derrotado(a).
 
 --------
 
 ## Dicas
 
 - Para desenvolver o programa, busque criar **funções** para algumas rotinas do seu programa, assim você terá menos repetição de linhas de código e será mais fácil realizar correções futuras;
+- Utilize uma estrutura de coleção para armazenar as possíveis palavras que seu programa poderá sortear para que o(a) jogador(a) adivinhe. Você poderá usar, por exemplo, um conjunto (`set`). Portanto, essa coleção poderá tanto armazenar as palavras cadastradas pelo(a) jogadador(a) quando ter seus valores consultados pelo jogo para obter uma palavra a ser adivinhada.
+- A coleção que guarda as palavras não precisa ser persistida, ou seja, só existirá em memória e durante a execução do jogo. Caso o programa seja encerrado, todas as palavras serão perdidas. Porém, você pode optar por salvar essas palavras em um arquivo de texto (como isso não foi visto em sala, essa etapa é opcional!);
 - É possível que você precise utilizar métodos para manipulação de strings, tais como `strip()`, `upper()`, etc.;
 - Para que seja possível randomizar qual palavra o programa irá selecionar para que o(a) jogador(a) adivinhe, você precisará utilizar a função `randrange` da biblioteca `random`. Para importá-la no seu código, utilize a seguinte linha de comando no início do seu programa `from random import randrange`. Na próxima seção, você entenderá o porquê usaremos essa função;
 - Caso você queira trabalhar com palavras que possuam acentos, é possível que você tenha problemas em algumas versões de interpretadores. Para isso, utilize em seu programa o seguinte importe: `import unidecode`. Você poderá fazer esse importe logo abaixo do importe da biblioteca `random`;
 
 ### Usabilidade da biblioteca random
 
-- A biblioteca `random `-  para sortear um número inteiro que possa ser responsável pela aleatoriedade do jogo, assim, a cada execução, uma nova palavra poderá ser .., e a mesma será distinta da anterior
+- O módulo `random` possui diversos métodos (clique aqui para saber mais), mas no nosso cenário, poderemos utilizar o método `randrange` para sortear um número inteiro que será responsável por indicar qual palavra deverá ser adivinha pelo jogador. Isso dará uma certa aleatoriedade ao jogo, pois a cada vez que o(a) jogador(a) decidir executar o jogo, uma nova palavra - dentre aquelas armazenadas em memória - será sorteada, tendo uma boa probabilidade de que a palavra em questão seja distinta da anterior.
+- Lembra que iremos utilizar uma coleção (como `set`, por exemplo) para "armazenar" as palavras que o jogo poderá sortear?! Pois bem: em uma coleção os dados podem ser acessados através de **índices**, que são número inteiros! O número gerado pelo `randrange` deverá ser usado para fazer esse acesso.
     
-
