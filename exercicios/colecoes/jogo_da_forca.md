@@ -120,3 +120,57 @@ Para isso, você poderá utilizar o modelo abaixo:
 - O módulo `random` possui diversos métodos (clique aqui para saber mais), mas no nosso cenário, poderemos utilizar o método `randrange` para sortear um número inteiro que será responsável por indicar qual palavra deverá ser adivinha pelo jogador. Isso dará uma certa aleatoriedade ao jogo, pois a cada vez que o(a) jogador(a) decidir executar o jogo, uma nova palavra - dentre aquelas armazenadas em memória - será sorteada, tendo uma boa probabilidade de que a palavra em questão seja distinta da anterior.
 - Lembra que iremos utilizar uma coleção (como `set`, por exemplo) para "armazenar" as palavras que o jogo poderá sortear?! Pois bem: em uma coleção os dados podem ser acessados através de **índices**, que são número inteiros! O número gerado pelo `randrange` deverá ser usado para fazer esse acesso.
     
+### Desenhos extras:
+
+Se você optar por estabelecer o número máximo de tentativas com osendo 7 (sete), você pode utilizar os seguintes prints para desenhar o personagem sendo enfocardo:
+
+```python
+print("  _______     ")
+    print(" |/      |    ")
+
+    if(erros == 1):
+        print (" |      (_)   ")
+        print (" |            ")
+        print (" |            ")
+        print (" |            ")
+
+    if(erros == 2):
+        print (" |      (_)   ")
+        print (" |      \     ")
+        print (" |            ")
+        print (" |            ")
+
+    if(erros == 3):
+        print (" |      (_)   ")
+        print (" |      \|    ")
+        print (" |            ")
+        print (" |            ")
+
+    if(erros == 4):
+        print (" |      (_)   ")
+        print (" |      \|/   ")
+        print (" |            ")
+        print (" |            ")
+
+    if(erros == 5):
+        print (" |      (_)   ")
+        print (" |      \|/   ")
+        print (" |       |    ")
+        print (" |            ")
+
+    if(erros == 6):
+        print (" |      (_)   ")
+        print (" |      \|/   ")
+        print (" |       |    ")
+        print (" |      /     ")
+
+    if (erros == 7):
+        print (" |      (_)   ")
+        print (" |      \|/   ")
+        print (" |       |    ")
+        print (" |      / \   ")
+
+    print(" |            ")
+    print("_|___         ")
+    print()
+```
