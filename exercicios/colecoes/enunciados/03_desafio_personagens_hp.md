@@ -83,4 +83,4 @@ e, em seguida, exibir novamente o menu. Esses passos deverá se repetir até a p
 
 ### Informações adicionais:
 
-Lista de personagens e magias obtidas aqui: 
+Lista de personagens e magias obtidas [neste repositório]()
