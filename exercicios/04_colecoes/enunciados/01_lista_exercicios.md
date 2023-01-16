@@ -1,4 +1,4 @@
-## Lista de exercícios 04 - Coleções
+## Lista de exercícios - Coleções
 
 1. Escreva um programa em Python que multiplique todos os itens em uma lista pelo valor do fator variável.
 
